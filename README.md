@@ -43,7 +43,7 @@ It’s a method of evaluating how well specific algorithm models the given data.
 
 ![](https://miro.medium.com/max/1026/1*SGhoeJ_BgcfqU06CmX41rw.png)
 
-**L1 loss: **
+**L1 loss:**
 
 ![](https://miro.medium.com/max/1066/1*piCo0iDgPmESnQkHSwAK6A.png)
 

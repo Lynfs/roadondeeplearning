@@ -1,7 +1,3 @@
-# My road on deep learning learning(lol)
-
----
-
 # Basics informations about neural networks
 
 ### What's a activation function? 
@@ -12,13 +8,17 @@ well, it’s just a thing function that you use to get the output of node. It is
 
 It is used to determine the output of neural network like yes or no. It maps the resulting values in between 0 to 1 or -1 to 1 etc. (depending upon the function).
 
-### Sigmoid function
+## Sigmoid function
 
-**f(z) = 1/(1+e^(-z))**
+it is given by **f(z) = 1/(1+e^(-z))**
 
-### Tanh 
+![sigmoid](https://i.imgur.com/c9R8y1L.png)
 
-**tanh(t) = ((e^t)-(e^(-t)))/((e^t)+(e^(-t)))**
+## Tanh 
+
+it is given by **tanh(t) = ((e^t)-(e^(-t)))/((e^t)+(e^(-t)))**
+
+![tanh(https://i.imgur.com/XwT3bSo.png)
 
 ## What's derivative?
 
@@ -26,6 +26,10 @@ It is used to determine the output of neural network like yes or no. It maps the
 
 The derivative of a function of a single variable at a chosen input value, when it exists, is the slope of the tangent line to the graph of the function at that point. The tangent line is the best linear approximation of the function near that input value. For this reason, the derivative is often described as the "instantaneous rate of change", the ratio of the instantaneous change in the dependent variable to that of the independent variable.
 
+![derivative](https://i.imgur.com/fJgBHak.png)
+
 ## why do we need to use the derivative?
 
 When updating the curve, to know in which direction and how much to change or update the curve depending upon the slope.That is why we use differentiation in almost every part of Machine Learning and Deep Learning.
+
+![derivative-examples](https://i.imgur.com/WkrVhWk.png)

@@ -1,3 +1,5 @@
+**This file was NOT completely written by me. there are copies of explanations from other sources, such as towards and imasters.**
+
 # Basics informations about neural networks
 
 ### What exactly is Deep Learning?
@@ -10,7 +12,53 @@ Deep Learning, on the other hand, is just a type of Machine Learning, inspired b
 
 ![](https://miro.medium.com/max/700/0*AONVmd3v4wO_dWr6)
 
-so, we can call Deep learning as a "Deep neural-network", cuz the adjective "deep" in comes from the use of multiple layers in the network.
+so, we can call Deep learning as a "Deep neural-network", cuz the adjective "deep" in comes from the use of multiple layers in the network. Lets see a quicly example of how it works with images.
+
+![](https://static.imasters.com.br/wp-content/uploads/2018/06/19154808/grey1.jpg)
+
+### Convolutional Neural Network
+
+Convolution can be seen as a synonym for combination. It is the procedure of combining two sources of information.
+
+Convolutional Neural Network (CNN) is a class of neural network used for image processing and analysis. It was proposed in 1998 in a paper by scientist Yann LeCun, who proposed an architecture capable of recognizing handwritten digits with 99.2% precision. This architecture was inspired by a 1968 research by David Hunter Hubel and Torsten Wiesel on the functioning of the visual cortex of mammals.
+
+Research suggests that mammals visually perceive the world hierarchically, through layers of neuron clusters. When we see something, clusters are activated hierarchically, and each detects a set of attributes about what was seen.
+
+CNN's architecture simulates neuron clusters to detect attributes of what has been seen, organized hierarchically and abstractly enough to generalize regardless of size, rotation position, etc.
+
+![](https://static.imasters.com.br/wp-content/uploads/2018/06/19154902/2.png)
+
+An image can be represented as a matrix. Each element of the matrix contains the value of its respective pixel, which can vary from 0 to 255. For color images in RGB, we have a matrix “in three dimensions”, where each dimension is one of the layers of color (red, green and blue ). Thus, a color image of 255px by 255px is represented by three arrays of 255 by 255 (255x255x3).
+
+so, what could we do to "learn patterns"?
+
+we can use a smaller matrix, composed of values. It will be applied to the image (as a filter), to obtain activation regions, that is, regions where specific attributes of this filter were found.
+
+For example, we can imagine a 16 x 16 filter traversing a 256 x 256 x 3 image. At each step we take a 16 x 16 portion of the image and make a convolution (that is, we calculate the scalar product between the two matrices) . The obtained value is added to the activation matrix. This process is repeated until all three matrices have been completely traversed.
+
+![](https://static.imasters.com.br/wp-content/uploads/2018/06/19154939/3-300x219.gif)
+
+The filter values change with each training iteration in order to improve the identification of which regions contain significant attributes (in the same way that the weights in a neural network perceptron are updated in training).
+
+But how does this series of multiplications help us to detect the attributes of an image? As the filter learns to detect an attribute (through the learning process), its values adjust so that the result of the convolution is a value that indicates that the given attribute has been found.
+
+In the example below, we are trying to identify the mouse in the image. The filter will work to detect that curve highlighted in yellow. The pixel representation of the mouse outline contains color values where the outline occurs, and zero (white) where it does not.
+
+![](https://static.imasters.com.br/wp-content/uploads/2018/06/19155014/lines1.jpg)
+
+When we scale the product between the filter and the contour we are looking for, the result is a very large number.
+
+![](https://static.imasters.com.br/wp-content/uploads/2018/06/19155051/graeen.jpg)
+
+*This result is always lower in other parts of the image, because the scalar product is smaller.*
+
+![](https://static.imasters.com.br/wp-content/uploads/2018/06/19155116/MOUSE.jpg)
+
+So, when the result of the convolution is a large number, it means that the attribute was detected. When it is a result of 0 or very small, it means that the attribute was not found.
+
+[Original source](https://imasters.com.br/back-end/classificacao-de-imagens-com-deep-learning-e-tensorflow)
+
+## below, some simple definitions involved in the middle
 
 ### What's a activation function? 
 

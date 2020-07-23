@@ -1,5 +1,17 @@
 # Basics informations about neural networks
 
+### What exactly is Deep Learning?
+
+Deep Learning is a subset of Machine Learning, which on the other hand is a subset of Artificial Intelligence. Artificial Intelligence is a general term that refers to techniques that enable computers to mimic human behavior. Machine Learning represents a set of algorithms trained on data that make all of this possible.
+
+![](https://miro.medium.com/max/530/0*DTXj4uIfDmtDyL0z)
+
+Deep Learning, on the other hand, is just a type of Machine Learning, inspired by the structure of a human brain. Deep learning algorithms attempt to draw similar conclusions as humans would by continually analyzing data with a given logical structure. To achieve this, deep learning uses a multi-layered structure of algorithms called neural networks.
+
+![](https://miro.medium.com/max/700/0*AONVmd3v4wO_dWr6)
+
+so, we can call Deep learning as a "Deep neural-network", cuz the adjective "deep" in comes from the use of multiple layers in the network.
+
 ### What's a activation function? 
 
 well, it’s just a thing function that you use to get the output of node. It is also known as Transfer Function.
